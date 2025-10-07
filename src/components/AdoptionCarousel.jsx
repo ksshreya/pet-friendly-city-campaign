@@ -1,13 +1,9 @@
 import React, { useState } from "react";
-import buddy from "../assets/images/Buddy.jpeg";
-import whiskers from "../assets/images/Whiskers.jpeg";
-import bella from "../assets/images/Bella.jpeg";
-import max from "../assets/images/Max.jpeg";
 
 const pets = [
   {
     id: "buddy",
-    img: buddy,
+    img: "/images/Buddy.jpeg",
     name: "Buddy",
     desc: "Buddy is a friendly Golden Retriever with a heart of gold. He loves playing fetch and going for walks. He's looking for a family who will give him lots of love and attention.",
     breed: "Golden Retriever",
@@ -17,7 +13,7 @@ const pets = [
   },
   {
     id: "whiskers",
-    img: whiskers,
+    img: "/images/Whiskers.jpeg",
     name: "Whiskers",
     desc: "Whiskers is a playful tabby cat who loves to chase laser pointers and take naps in sunny spots. He's looking for a cozy home with a family who will give him lots of love and playtime.",
     breed: "Tabby",
@@ -27,7 +23,7 @@ const pets = [
   },
   {
     id: "bella",
-    img: bella,
+    img: "/images/Bella.jpeg",
     name: "Bella",
     desc: "Bella is a sweet and gentle calico cat with beautiful markings. She enjoys quiet time and being petted. She's looking for a calm and loving home.",
     breed: "Calico",
@@ -37,7 +33,7 @@ const pets = [
   },
   {
     id: "max",
-    img: max,
+    img: "/images/Max.jpeg",
     name: "Max",
     desc: "Max is a fun-loving Labrador puppy with a lot of energy. He loves to play fetch, go for runs, and explore new places. He's looking for an active family who will take him on lots of adventures.",
     breed: "Labrador Retriever",
@@ -58,7 +54,7 @@ const AdoptionCarousel = () => {
           <div className="pet-card" key={pet.id}>
             <img src={pet.img} alt={pet.name} />
             <h3>{pet.name}</h3>
-            <p>{pet.desc.split(". ")[0]}.</p> {/* Short preview on card */}
+            <p>{pet.desc.split(". ")[0]}.</p> {/* Short preview */}
             <button className="adopt-button" onClick={() => setSelectedPet(pet)}>Adopt Me!</button>
           </div>
         ))}

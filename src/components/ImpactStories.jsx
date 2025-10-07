@@ -1,26 +1,23 @@
 import React, { useState } from "react";
-import story1 from "../assets/images/impact-story1.jpeg";
-import story2 from "../assets/images/impact-story2.jpeg";
-import story3 from "../assets/images/impact-story3.jpeg";
 
 const stories = [
   {
     id: "story1",
-    img: story1,
+    img: "/images/impact-story1.jpeg",
     title: "A Park for Every Paw",
     desc: "Learn how our volunteers helped create the first dog park in Sunny Meadows!",
     fullDesc: "Thanks to our dedicated volunteers, the first dog park in Sunny Meadows has been completed! Local families and their pets now have a safe, fun space to play and socialize. This initiative has strengthened community bonds and improved pet welfare across the area."
   },
   {
     id: "story2",
-    img: story2,
+    img: "/images/impact-story2.jpeg",
     title: "Happy Homes for Homeless Hounds",
     desc: "Discover the heartwarming stories of rescued pets finding their forever families.",
     fullDesc: "Over the past year, dozens of rescued pets have found loving forever homes through our campaign. Each adoption story is unique, filled with joy and hope, highlighting the importance of responsible pet ownership and community support."
   },
   {
     id: "story3",
-    img: story3,
+    img: "/images/impact-story3.jpeg",
     title: "Pet-Friendly Businesses on the Rise",
     desc: "See how our campaign is encouraging local businesses to welcome our furry companions.",
     fullDesc: "Local businesses are joining our movement by becoming pet-friendly! From cafes to bookstores, these establishments now offer water bowls, treats, and welcoming spaces for pets and their owners, fostering a more inclusive community."
